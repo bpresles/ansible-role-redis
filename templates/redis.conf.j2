@@ -5,7 +5,9 @@ pidfile /var/run/redis/{{ redis_daemon }}.pid
 port {{ redis_port }}
 bind {{ redis_bind_interface }}
 
+{% if redis_protected_mode %}
 protected-mode {{ redis_protected_mode }}
+{% endif %}
 
 {% if redis_unixsocket %}
 unixsocket {{ redis_unixsocket }}

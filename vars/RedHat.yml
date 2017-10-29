@@ -1,4 +1,5 @@
 ---
 __redis_package: redis
+__redis_protected_mode: yes
 redis_daemon: redis
 redis_conf_path: /etc/redis.conf
